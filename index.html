@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSV Flashcards</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PapaParse (CSV) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- jsPDF (UMD) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>CSV → Flashcards</h1>
+
+  <input type="file" id="fileInput" accept=".csv" />
+  <button id="exportBtn">Export PDF</button>
+
+  <div id="pages"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
